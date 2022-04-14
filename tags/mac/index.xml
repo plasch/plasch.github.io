@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mac on Hello Friend NG</title>
+    <link>localhost/tags/mac/</link>
+    <description>Recent content in mac on Hello Friend NG</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="localhost/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Установка и настройка adb на MacOS</title>
+      <link>localhost/posts/adb_path/</link>
+      <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>localhost/posts/adb_path/</guid>
+      <description>Для использования ADB через терминал необходимо:
+  Установить Android Studio.
+  Установить Java через пакетный менеджер Homebrew:
+ brew search java brew install java11    После установки запустить команду в терминале: java -version, чтобы проверить корректность установки.
+  Прописать переменные среды в файле ~/.zshrc для Java:
+# JAVA export JAVA_HOME=&amp;#34;/Library/Java/JavaVirtualMachines/openjdk-11.jdk/Contents/Home&amp;#34; export PATH=$JAVA_HOME/bin:$PATH и для Android SDK:
+# ANDROID_SDK export ANDROID_HOME=/Users/&amp;lt;user_name&amp;gt;/Library/Android/sdk export PATH=$ANDROID_HOME/platform-tools:$PATH export PATH=$ANDROID_HOME/tools:$PATH export PATH=$ANDROID_HOME/tools/bin:$PATH export PATH=$ANDROID_HOME/build-tools/&amp;lt;version&amp;gt;/:$PATH   Выполнить файл .</description>
+    </item>
+    
+  </channel>
+</rss>
