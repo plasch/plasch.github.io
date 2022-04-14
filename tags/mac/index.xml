@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mac on Hello Friend NG</title>
-    <link>localhost/tags/mac/</link>
+    <link>https://plasch.github.io/tags/mac/</link>
     <description>Recent content in mac on Hello Friend NG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="localhost/tags/mac/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://plasch.github.io/tags/mac/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Установка и настройка adb на MacOS</title>
-      <link>localhost/posts/adb_path/</link>
+      <link>https://plasch.github.io/posts/adb_path/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>localhost/posts/adb_path/</guid>
+      <guid>https://plasch.github.io/posts/adb_path/</guid>
       <description>Для использования ADB через терминал необходимо:
   Установить Android Studio.
   Установить Java через пакетный менеджер Homebrew:
