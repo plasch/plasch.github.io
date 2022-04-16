@@ -19,10 +19,10 @@
     
     <item>
       <title>Установка и настройка adb на MacOS</title>
-      <link>https://plasch.github.io/posts/adb_path/</link>
+      <link>https://plasch.github.io/posts/adb-path/</link>
       <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://plasch.github.io/posts/adb_path/</guid>
+      <guid>https://plasch.github.io/posts/adb-path/</guid>
       <description>Для использования ADB через терминал необходимо:
   Установить Android Studio.
   Установить Java через пакетный менеджер Homebrew:
