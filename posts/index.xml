@@ -6,8 +6,43 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 09 Apr 2022 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Sat, 16 Apr 2022 19:06:19 +0300</lastBuildDate>
         <atom:link href="https://plasch.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Инструменты тестировщика</title>
+            <link>https://plasch.github.io/posts/tools-for-qa/</link>
+            <pubDate>Sat, 16 Apr 2022 19:06:19 +0300</pubDate>
+            
+            <guid>https://plasch.github.io/posts/tools-for-qa/</guid>
+            <description>Instruments  Charles - HTTP proxy / HTTP monitor Proxyman - native, high-performance macOS application with powerful debugging features that enable developers to capture, inspect, and manipulate HTTP(s) requests/responses Postman - API platform for building and using APIs Insomnia - сross-platform REST client, built on top of Electron Sublime Text - simple and functional text editing Pretty JSON - JSON plugin for Sublime Text StackEdit – in-browser Markdown editor JSON Viewer - Chrome extension for printing JSON and JSONP  Android  Genymotion - cross-platform Android emulator for developers &amp;amp; QA engineers scrcpy - display and control Android device Apktool - a tool for reverse engineering Android apk files Android File Transfer - browse and transfer files between your Mac computer and your Android device APK Editor Studio - APK editor for PC and Mac  iOS  Bagel — a little native network debugging tool for iOS AppleSimulatorUtils - collection of utils for Apple simulators Apple Configurator - deploy devices in school or business  </description>
+            <content type="html"><![CDATA[<h2 id="instruments">Instruments</h2>
+<ol>
+<li><a href="https://www.charlesproxy.com/">Charles</a> - HTTP proxy / HTTP monitor</li>
+<li><a href="https://proxyman.io/">Proxyman</a> - native, high-performance macOS application with powerful debugging features that enable developers to capture, inspect, and manipulate HTTP(s) requests/responses</li>
+<li><a href="https://www.postman.com/">Postman</a> - API platform for building and using APIs</li>
+<li><a href="https://insomnia.rest/">Insomnia</a> - сross-platform REST client, built on top of Electron</li>
+<li><a href="https://www.sublimetext.com/">Sublime Text</a> - simple and functional text editing</li>
+<li><a href="https://packagecontrol.io/packages/Pretty%20JSON">Pretty JSON</a> - JSON plugin for Sublime Text</li>
+<li><a href="https://stackedit.io/">StackEdit</a> – in-browser Markdown editor</li>
+<li><a href="https://github.com/tulios/json-viewer">JSON Viewer</a> - Chrome extension for printing JSON and JSONP</li>
+</ol>
+<h2 id="android">Android</h2>
+<ol>
+<li><a href="https://www.genymotion.com/fun-zone/">Genymotion</a> - cross-platform Android emulator for developers &amp; QA engineers</li>
+<li><a href="https://github.com/Genymobile/scrcpy">scrcpy</a> - display and control Android device</li>
+<li><a href="https://ibotpeaches.github.io/Apktool/">Apktool</a> - a tool for reverse engineering Android apk files</li>
+<li><a href="https://www.android.com/filetransfer/">Android File Transfer</a> - browse and transfer files between your Mac computer and your Android device</li>
+<li><a href="https://github.com/kefir500/apk-editor-studio">APK Editor Studio</a> - APK editor for PC and Mac</li>
+</ol>
+<h2 id="ios">iOS</h2>
+<ol>
+<li><a href="https://github.com/yagiz/Bagel">Bagel</a> — a little native network debugging tool for iOS</li>
+<li><a href="https://github.com/wix/AppleSimulatorUtils">AppleSimulatorUtils</a> - collection of utils for Apple simulators</li>
+<li><a href="https://support.apple.com/apple-configurator">Apple Configurator</a> - deploy devices in school or business</li>
+</ol>
+]]></content>
+        </item>
         
         <item>
             <title>Установка и настройка adb на MacOS</title>
