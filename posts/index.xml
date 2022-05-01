@@ -18,7 +18,7 @@
             <description>Enable &amp;amp; disable global HTTP proxy for Charles monitoring Enable proxy:
 adb shell settings put global http_proxy 192.168.xx.xxx:8888  IP address of your wireless connection - ipconfig getifaddr en0 IP address for a wired Ethernet connection - ipconfig getifaddr en1  Check setting:
 adb shell settings get global http_proxy To remove the proxy setting enter below ADB command:
-adb shell settings put global http_proxy :0 Tips:  Create an alias to make the adb command shorter: alias proxy=&#39;adb shell settings put global http_proxy 192.</description>
+adb shell settings put global http_proxy :0 Tips:   Create an alias to make the adb command shorter: alias proxy=&#39;adb shell settings put global http_proxy 192.</description>
             <content type="html"><![CDATA[<h4 id="enable--disable-global-http-proxy-for-charles-monitoring">Enable &amp; disable global HTTP proxy for Charles monitoring</h4>
 <p>Enable proxy:</p>
 <pre tabindex="0"><code>adb shell settings put global http_proxy 192.168.xx.xxx:8888
@@ -32,9 +32,12 @@ adb shell settings put global http_proxy :0 Tips:  Create an alias to make the a
 <pre tabindex="0"><code>adb shell settings put global http_proxy :0
 </code></pre><h4 id="tips">Tips:</h4>
 <ol>
-<li>Create an alias to make the adb command shorter:
-<code>alias proxy='adb shell settings put global http_proxy 192.168.XX.XXXX:8888'</code></li>
-<li>Script for enable &amp; disable proxy - <a href="/static/files/proxy.sh">proxy.sh</a>
+<li>
+<p>Create an alias to make the adb command shorter:
+<code>alias proxy='adb shell settings put global http_proxy 192.168.XX.XXXX:8888'</code></p>
+</li>
+<li>
+<p>Script for enable &amp; disable proxy - <a href="/docs/proxy.sh">proxy.sh</a></p>
 <ul>
 <li>Download it</li>
 <li>Give an executable permission to a script, run command <code>chmod +x path/to/proxy.sh</code></li>

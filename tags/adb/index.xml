@@ -17,7 +17,7 @@
       <description>Enable &amp;amp; disable global HTTP proxy for Charles monitoring Enable proxy:
 adb shell settings put global http_proxy 192.168.xx.xxx:8888  IP address of your wireless connection - ipconfig getifaddr en0 IP address for a wired Ethernet connection - ipconfig getifaddr en1  Check setting:
 adb shell settings get global http_proxy To remove the proxy setting enter below ADB command:
-adb shell settings put global http_proxy :0 Tips:  Create an alias to make the adb command shorter: alias proxy=&#39;adb shell settings put global http_proxy 192.</description>
+adb shell settings put global http_proxy :0 Tips:   Create an alias to make the adb command shorter: alias proxy=&#39;adb shell settings put global http_proxy 192.</description>
     </item>
     
     <item>
