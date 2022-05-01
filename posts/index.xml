@@ -1,21 +1,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Hello Friend NG</title>
+        <title>Posts on Hello, Friend NG</title>
         <link>https://plasch.github.io/posts/</link>
-        <description>Recent content in Posts on Hello Friend NG</description>
+        <description>Recent content in Posts on Hello, Friend NG</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-        <lastBuildDate>Sat, 16 Apr 2022 19:06:19 +0300</lastBuildDate>
+        <lastBuildDate>Sun, 01 May 2022 11:45:16 +0300</lastBuildDate>
         <atom:link href="https://plasch.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Инструменты тестировщика</title>
+            <title>Charles Proxy via ADB</title>
+            <link>https://plasch.github.io/posts/adb-charles-proxy/</link>
+            <pubDate>Sun, 01 May 2022 11:45:16 +0300</pubDate>
+            
+            <guid>https://plasch.github.io/posts/adb-charles-proxy/</guid>
+            <description>Enable &amp;amp; disable global HTTP proxy for Charles monitoring Enable proxy:
+adb shell settings put global http_proxy 192.168.xx.xxx:8888  IP address of your wireless connection - ipconfig getifaddr en0 IP address for a wired Ethernet connection - ipconfig getifaddr en1  Check setting:
+adb shell settings get global http_proxy To remove the proxy setting enter below ADB command:
+adb shell settings put global http_proxy :0 Tips:  Create an alias to make the adb command shorter: alias proxy=&#39;adb shell settings put global http_proxy 192.</description>
+            <content type="html"><![CDATA[<h4 id="enable--disable-global-http-proxy-for-charles-monitoring">Enable &amp; disable global HTTP proxy for Charles monitoring</h4>
+<p>Enable proxy:</p>
+<pre tabindex="0"><code>adb shell settings put global http_proxy 192.168.xx.xxx:8888
+</code></pre><ul>
+<li>IP address of your wireless connection - <code>ipconfig getifaddr en0</code></li>
+<li>IP address for a wired Ethernet connection - <code>ipconfig getifaddr en1</code></li>
+</ul>
+<p>Check setting:</p>
+<pre tabindex="0"><code>adb shell settings get global http_proxy
+</code></pre><p>To remove the proxy setting enter below ADB command:</p>
+<pre tabindex="0"><code>adb shell settings put global http_proxy :0
+</code></pre><h4 id="tips">Tips:</h4>
+<ol>
+<li>Create an alias to make the adb command shorter:
+<code>alias proxy='adb shell settings put global http_proxy 192.168.XX.XXXX:8888'</code></li>
+<li>Script for enable &amp; disable proxy - <a href="/static/files/proxy.sh">proxy.sh</a>
+<ul>
+<li>Download it</li>
+<li>Give an executable permission to a script, run command <code>chmod +x path/to/proxy.sh</code></li>
+<li>Now you can execute it directly: <code>path/to/proxy.sh</code></li>
+<li>And create an alias for script: <code>alias proxy='path/to/proxy.sh'</code></li>
+</ul>
+</li>
+</ol>
+<p> </p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Useful ADB commands for testing</title>
+            <link>https://plasch.github.io/posts/useful-adb-commands/</link>
+            <pubDate>Sun, 24 Apr 2022 23:00:52 +0300</pubDate>
+            
+            <guid>https://plasch.github.io/posts/useful-adb-commands/</guid>
+            <description>1. Retrieve apk from device adb shell pm list packages | grep example adb shell pm path com.example.someapp adb pull /data/app/com.example.someapp.apk 2. Shut down device adb shell reboot -p  </description>
+            <content type="html"><![CDATA[<h4 id="1-retrieve-apk-from-device">1. Retrieve apk from device</h4>
+<pre tabindex="0"><code>adb shell pm list packages | grep example
+adb shell pm path com.example.someapp
+adb pull /data/app/com.example.someapp.apk
+</code></pre><h4 id="2-shut-down-device">2. Shut down device</h4>
+<pre tabindex="0"><code>adb shell reboot -p
+</code></pre><p> </p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Tools for QA</title>
             <link>https://plasch.github.io/posts/tools-for-qa/</link>
             <pubDate>Sat, 16 Apr 2022 19:06:19 +0300</pubDate>
             
             <guid>https://plasch.github.io/posts/tools-for-qa/</guid>
-            <description>Instruments  Charles - HTTP proxy / HTTP monitor Proxyman - native, high-performance macOS application with powerful debugging features that enable developers to capture, inspect, and manipulate HTTP(s) requests/responses Postman - API platform for building and using APIs Insomnia - сross-platform REST client, built on top of Electron Sublime Text - simple and functional text editing Pretty JSON - JSON plugin for Sublime Text StackEdit – in-browser Markdown editor JSON Viewer - Chrome extension for printing JSON and JSONP  Android  Genymotion - cross-platform Android emulator for developers &amp;amp; QA engineers scrcpy - display and control Android device Apktool - a tool for reverse engineering Android apk files Android File Transfer - browse and transfer files between your Mac computer and your Android device APK Editor Studio - APK editor for PC and Mac  iOS  Bagel — a little native network debugging tool for iOS AppleSimulatorUtils - collection of utils for Apple simulators Apple Configurator - deploy devices in school or business  </description>
+            <description>Instruments  Charles - HTTP proxy / HTTP monitor Proxyman - native, high-performance macOS application with powerful debugging features that enable developers to capture, inspect, and manipulate HTTP(s) requests/responses Postman - API platform for building and using APIs Insomnia - сross-platform REST client, built on top of Electron Sublime Text - simple and functional text editing Pretty JSON - JSON plugin for Sublime Text StackEdit – in-browser Markdown editor JSON Viewer - Chrome extension for printing JSON and JSONP  Android  Genymotion - cross-platform Android emulator for developers &amp;amp; QA engineers scrcpy - display and control Android device Apktool - a tool for reverse engineering Android apk files Android File Transfer - browse and transfer files between your Mac computer and your Android device APK Editor Studio - APK editor for PC and Mac Proxy Toggle - application to help android dev/qa to quickly enable and disable proxy settings  iOS  Bagel — a little native network debugging tool for iOS AppleSimulatorUtils - collection of utils for Apple simulators Apple Configurator - deploy devices in school or business iMazing - is simply the best iOS device manager   </description>
             <content type="html"><![CDATA[<h3 id="instruments">Instruments</h3>
 <ol>
 <li><a href="https://www.charlesproxy.com/">Charles</a> - HTTP proxy / HTTP monitor</li>
@@ -34,18 +89,21 @@
 <li><a href="https://ibotpeaches.github.io/Apktool/">Apktool</a> - a tool for reverse engineering Android apk files</li>
 <li><a href="https://www.android.com/filetransfer/">Android File Transfer</a> - browse and transfer files between your Mac computer and your Android device</li>
 <li><a href="https://github.com/kefir500/apk-editor-studio">APK Editor Studio</a> - APK editor for PC and Mac</li>
+<li><a href="https://github.com/theappbusiness/android-proxy-toggle">Proxy Toggle</a> - application to help android dev/qa to quickly enable and disable proxy settings</li>
 </ol>
 <h3 id="ios">iOS</h3>
 <ol>
 <li><a href="https://github.com/yagiz/Bagel">Bagel</a> — a little native network debugging tool for iOS</li>
 <li><a href="https://github.com/wix/AppleSimulatorUtils">AppleSimulatorUtils</a> - collection of utils for Apple simulators</li>
 <li><a href="https://support.apple.com/apple-configurator">Apple Configurator</a> - deploy devices in school or business</li>
+<li><a href="https://imazing.com/">iMazing</a> - is simply the best iOS device manager</li>
 </ol>
+<p> </p>
 ]]></content>
         </item>
         
         <item>
-            <title>Установка и настройка adb на MacOS</title>
+            <title>Installing ADB on macOS</title>
             <link>https://plasch.github.io/posts/adb-path/</link>
             <pubDate>Sat, 09 Apr 2022 00:00:00 +0000</pubDate>
             
@@ -91,6 +149,7 @@ export PATH=$ANDROID_HOME/build-tools/&lt;version&gt;/:$PATH
 </li>
 </ol>
 <p>Теперь можно юзать adb напрямую через терминал. Спасибо, пожалуйста, не благодари!</p>
+<p> </p>
 ]]></content>
         </item>
         
