@@ -26,7 +26,7 @@ adb shell settings put global http_proxy :0 Tips:   Create an alias to make the 
       <pubDate>Sun, 24 Apr 2022 23:00:52 +0300</pubDate>
       
       <guid>https://plasch.github.io/posts/useful-adb-commands/</guid>
-      <description>1. Retrieve apk from device adb shell pm list packages | grep example adb shell pm path com.example.someapp adb pull /data/app/com.example.someapp.apk 2. Shut down device adb shell reboot -p  </description>
+      <description>1. Retrieve apk from device adb shell pm list packages | grep example adb shell pm path com.example.someapp adb pull /data/app/com.example.someapp.apk 2. Shut down device adb shell reboot -p 3. Open link in browser adb shell am start -a android.intent.action.VIEW -d https://www.google.com/  </description>
     </item>
     
     <item>
